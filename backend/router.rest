@@ -1,0 +1,49 @@
+GET http://localhost:8000/user
+
+###
+GET http://localhost:8000/user/lakshmiprasannamudiga@gmail.com
+
+###
+POST http://localhost:8000/user
+Content-Type: application/json
+{
+   "name":"TEST User",
+   "email":"test@gmail.com",
+   "image":"Test Image" 
+}
+
+###
+GET http://localhost:8000/post
+###
+POST http://localhost:8000/post
+Content-Type: application/json
+
+{
+   "postText":"Sample Post Msg",
+   "createdAt":"326347347",
+   "createdBy":"65as34127vy161938v1233h6nmd",
+   "imageUrl":"SmapleUrl"
+}
+
+###
+PUT http://localhost:8000/post/likes/fewhuiew7642847dv713t
+Content-Type: application/json
+
+{
+   "userId":"suerw89ry728923bfui2",
+   "isLike":true
+}
+
+###
+POST http://localhost:8000/comment
+Content-Type: application/json
+
+{
+   "postId":"suerw89ry728923bfui2",
+   "createdBy":"suerw89ry728923bfui2",
+   "commentText":"Sample new Comment",
+   "createdAt":"1244"
+}
+
+###
+DELETE http://localhost:8000/comment/623fr327d2e523edgvsmd
